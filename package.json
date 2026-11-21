@@ -55,8 +55,8 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "node init && tsup",
+    "dev": "node init && tsup --watch",
     "test": "vitest run test/client.test.ts test/retryPolicy.test.ts test/network-environment.test.ts",
     "test:ui": "vitest run test/ui/",
     "test:integration": "vitest run tests/integration",
@@ -90,6 +90,8 @@
     "@walletconnect/sign-client": "^2.23.9",
     "ajv": "^8.20.0",
     "commander": "^11.1.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "ts-morph": "^21.0.0"
   },
   "devDependencies": {

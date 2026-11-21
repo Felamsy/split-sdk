@@ -17,10 +17,8 @@ reports/mutation/
 npm-debug.log*
 
 # Env
-.env
-.env.local
 
 # Editor / OS
 .DS_Store
 .idea/
-.vscode/
+config.bat
